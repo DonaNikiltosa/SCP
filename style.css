@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    /*Interface color*/
+    --page-background: #303034;
+    --scp-card-background: #424248;
+    --modal-window-background: #3A3A40;
+    --header-background: #242428;
+    --main-text: #F4F4F4;
+    --secondary-text: #D7D7D7;
+    --euclid-class: #850005;
+    --keter-class: #64030F;
+    --card-outlines: #2A2A2E; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.auth-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--page-background);
+}
+
+#reg-form,
+#login-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.reg-title {
+    font-family: "Source Code Pro", monospace;
+    font-size: 64px;
+    color: var(--main-text);
+}
+
+input:focus{
+    outline: none;
+}
+
+#reg-login,
+#reg-pass,
+#login-login,
+#login-pass {
+    width: 400px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+}
+
+.reg-btn:hover,
+.login-btn:hover {
+    background-color: #A30008;
+}
+
+.reg-btn,
+.login-btn {
+    background-color: #850005;
+    color: #F4F4F4;
+    border: none;
+    width: 80%;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Source Code Pro", monospace;
+}
