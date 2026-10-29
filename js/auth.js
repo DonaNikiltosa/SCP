@@ -1,4 +1,5 @@
 import { loadUsers, saveUsers, saveCurrentUser, removeCurrentUser } from "./storage.js";
+import { authScreen, ScpScreenPlatform } from "./screen.js";
 
 export function initAuth() {
     document.getElementById('reg-form').addEventListener('submit', (e) => {
@@ -40,16 +41,16 @@ export function initAuth() {
         }
 
         saveCurrentUser(user);
-        document.querySelector('.auth-panel').style.display = 'none';
-        document.querySelector('.scp-platform').style.display = 'block';
+        authScreen();
+        
     });
 
     document.querySelector('.logout-btn').addEventListener('click', () => {
         removeCurrentUser();
 
-        document.querySelector('.auth-panel').style.display = 'flex';
-        document.querySelector('.scp-platform').style.display = 'none';
-
+        
+        ScpScreenPlatform();
+        
         document.getElementById('reg-login').value = '';
         document.getElementById('reg-pass').value = '';
         document.getElementById('login-login').value = '';
