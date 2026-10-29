@@ -32,12 +32,12 @@ export function loadCurrentUser() {
     }
 }
 
-export function removeCurrentUser() {
-    localStorage.removeItem(CURRENT_USER);
+export function saveCurrentUser(user) {
+    localStorage.setItem(CURRENT_USER, JSON.stringify(user));
 }
 
-export function saveUsers(user) {
-    localStorage.setItem(CURRENT_USER, JSON.stringify(user));
+export function removeCurrentUser() {
+    localStorage.removeItem(CURRENT_USER);
 }
 
 function cardKey() {

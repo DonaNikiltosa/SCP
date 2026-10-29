@@ -67,11 +67,18 @@ input:focus{
 .reg-btn,
 .login-btn {
     background-color: #850005;
-    color: #F4F4F4;
+    color: var(--main-text);
     border: none;
     width: 80%;
     height: 45px;
     border-radius: 10px;
     font-size: 20px;
     font-family: "Source Code Pro", monospace;
+}
+
+.reg-message,
+.login-message {
+    font-size: 20px;
+    font-family: "Source Code Pro", monospace;
+    color: var(--main-text);
 }
