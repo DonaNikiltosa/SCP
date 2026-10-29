@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCP</title>
+</head>
+<body>
+    <div class="auth-panel">
+        <form id="reg-form">
+            <h2 class="reg-title">Регистрация</h2>
+            <input id="reg-login" type="text" placeholder="Введите логин">
+            <input id="reg-pass" type="password" placeholder="Введите пароль">
+            <button class="reg-btn">Зарегистрироваться</button>
+            <p class="reg-message"></p>
+        </form>
+
+        <form id="login-form">
+            <h2 class="reg-title">Вход</h2>
+            <input id="login-login" type="text" placeholder="Введите логин">
+            <input id="login-pass" type="password" placeholder="Введите пароль">
+            <button class="login-btn">Войти</button>
+            <p class="login-message"></p>
+        </form>
+    </div>
+
+    <div class="scp-platform" style="display: none;">
+        <button class="logout-btn">Выйти</button>
+        <p><span id="current-user">Агент:</span></p>
+    </div>
+</body>
+</html>
