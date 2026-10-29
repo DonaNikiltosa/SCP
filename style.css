@@ -82,3 +82,42 @@ input:focus{
     font-family: "Source Code Pro", monospace;
     color: var(--main-text);
 }
+
+.scp-platform {
+    min-height: 100vh;
+    background-color: var(--page-background);
+}
+
+.top-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    min-height: 72px;
+    background-color: var(--header-background);
+    color: var(--main-text);
+    border-bottom: 1px solid var(--card-outlines);
+}
+
+.agent,
+#current-user {
+    font-family: "Source Code Pro", monospace;
+    color: var(--main-text);
+    font-size: 20px;
+}
+
+.logout-btn {
+    background-color: #850005;
+    color: var(--main-text);
+    border: none;
+    width: 100px;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: "Source Code Pro", monospace;
+}
+
+.logout-btn:hover {
+    background-color: #A30008;
+}
