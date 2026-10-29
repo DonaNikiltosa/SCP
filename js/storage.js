@@ -32,6 +32,10 @@ export function loadCurrentUser() {
     }
 }
 
+export function removeCurrentUser() {
+    localStorage.removeItem(CURRENT_USER);
+}
+
 export function saveUsers(user) {
     localStorage.setItem(CURRENT_USER, JSON.stringify(user));
 }
