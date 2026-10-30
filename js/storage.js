@@ -3,11 +3,14 @@ export const CURRENT_USER = 'current-user';
 export const CARD_SCP = 'card-scp';
 
 export const DEFAULT_SCP = [
-    {scpNumber: 'SCP-173', scpName: 'Скульптура', ObjectClass: 'Класс объекта: Евклид'},
-    {scpNumber: 'SCP-049', scpName: 'Чумной доктор', ObjectClass: 'Класс объекта: Евклид'},
-    {scpNumber: 'SCP-106', scpName: 'Старик', ObjectClass: 'Класс объекта: Кетер'},
-    {scpNumber: 'SCP-426', scpName: 'Я тостер', ObjectClass: 'Класс объекта: Евклид'},
-    {scpNumber: 'SCP-239', scpName: 'Дитя-ведьма', ObjectClass: 'Класс объекта: Кетер'},
+    {scpNumber: 'SCP-173', scpName: 'Скульптура', objectClass: 'Класс объекта: Евклид'},
+    {scpNumber: 'SCP-049', scpName: 'Чумной доктор', objectClass: 'Класс объекта: Евклид'},
+    {scpNumber: 'SCP-106', scpName: 'Старик', objectClass: 'Класс объекта: Кетер'},
+    {scpNumber: 'SCP-426', scpName: 'Я тостер', objectClass: 'Класс объекта: Евклид'},
+    {scpNumber: 'SCP-239', scpName: 'Дитя-ведьма', objectClass: 'Класс объекта: Кетер'},
+    {scpNumber: 'SCP-105', scpName: 'Айрис', objectClass: 'Класс объекта: Безопасный'},
+    {scpNumber: 'SCP-261', scpName: 'Межпространственный торговый автомат', objectClass: 'Класс объекта: Безопасный'},
+    {scpNumber: 'SCP-504', scpName: 'Помидоры-критики', objectClass: 'Класс объекта: Безопасный'},
 ];
 
 export function loadUsers() {
